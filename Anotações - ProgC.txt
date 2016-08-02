@@ -1,0 +1,37 @@
+#include <stdio.h> - printf e scanf.
+#include <stdlib.h> - abs "Absolute, converter negativo."
+
+//WHILE:
+while(1) - Loop infinito.
+  - precisa do break.
+  - continue, ignora o bloco e passa pra proxima interação.
+
+//CASTING:
+int a = 3;
+int b = 2;
+double res = (double) a * b;
+
+//RANDON
+#include <time.h>
+
+int segundos = time(0); 			//EPOCH, Quantidade de segundos 01/01/1970 - time(0) segundos correntes.
+srand(segundos);					//Seed, altera a "semente" do randon.
+int numGrand = rand();  			//retorna um numero aleatório.
+int numerosecreto = numGrand % 100; //limita o randon de 0 a 99.
+
+//SCAN para FLOAT e DOUBLE:
+scanf("%f",&f);
+scanf("%lf",&d);
+
+//Array
+//declara array
+char segredo[10];
+
+armazena string
+sprintf(segredo, "teste");
+
+imprime o array com string armazenada
+printf("%s", segredo);
+
+//SCANF DE CHAR
+scanf(" %c", &chute); //ignora o enter.
