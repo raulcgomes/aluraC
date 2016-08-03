@@ -1,14 +1,23 @@
 #include <stdio.h>
-
+#include <string.h>
 
 int main() {
-	char palavraSecreta[20];
-	sprintf(palavraSecreta, "garrafa");
+	char secreatWord[20];
+	sprintf(secreatWord, "teste");
 
 	int acertou = 0;
-	int enforcou = 0;
+	int enforcou = 1;
 
 	do {
 		
-	} while (!acertou && !enforcou);
+		char chuteUser;
+		scanf(" %c", &chuteUser);
+
+		for(int i = 0; i < strlen(secreatWord); i++) {
+			if(secreatWord[i] == chuteUser){
+				printf("A posicao %d tem esse caractere\n", i);
+			}
+		}
+
+	} while(!acertou && !enforcou);
 }
