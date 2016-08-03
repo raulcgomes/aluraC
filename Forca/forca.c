@@ -16,6 +16,7 @@ int main() {
 		for(int i = 0; i < strlen(secreatWord); i++) {
 			
 			int achou = 0;
+			
 			for(int j = 0; j < tentativas; j++) {
 				if(chutesPossiveis[j] == secreatWord[i]) {
 					achou = 1;
